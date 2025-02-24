@@ -9,4 +9,12 @@ Eliminating the extra classes other than the ones considered
 Reorganization of the instance mask representation to follow the Cityscapes VPS convention.
 All the modified VPS masks of the KITTI STEP and Waymo dataset shall be found in the following link:T https://drive.google.com/drive/folders/1T2hEF7VbFGRytLEMxsbDKYg-ehi8NmUg?usp=sharing
 
-The original datasets shall be downloaded from the respective link which is repeated here for reference: Cityscapes VPS Dataset: KITTI STEP Dataset Waymo VPS Dataset
+The original datasets shall be downloaded from the respective link which is repeated here for reference: 
+
+Cityscapes VPS Dataset: https://www.dropbox.com/scl/fi/th8t12uvalox9fopzlab1/cityscapes-vps-dataset-1.0.zip?rlkey=rfd1prz6jsn4kxi1nc04gqqsr&e=1&dl=0
+
+KITTI STEP Dataset: https://www.cvlibs.net/datasets/kitti/eval_step.php
+
+Waymo VPS Dataset:https://waymo.com/open/download
+
+
