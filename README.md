@@ -14,25 +14,30 @@ The contents of the repo are tested under Python 3.7, PyTorch 1.12, Cuda 10.2, a
 
 ### Installation
 Most of the codes used in the repo are based on [mmdetection](https://github.com/open-mmlab/mmdetection) commit hash 4357697. The following modifications are made in the mmdetection module.
-The following commands can be used to install the dependencies:
+The following commands can be used to install the dependencies for reimplementation of VPSNetafter having installed Anaconda Python distribution whcih comes with modules like numpy, matplotlib:
 
 ```
 conda create -n decoup_vps python=3.7 -y
 conda activate decoup_vps
 conda install pytorch=1.12 torchvision cudatoolkit=10.2 -c pytorch -y
-pip install -r requirements.txt
+pip install mmcv==0.2.14
+pip install terminaltables
+pip install pycocotools
+pip install imagecorruptions
 pip install "git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI"
 pip install "git+https://github.com/cocodataset/panopticapi.git"
 pip install -v -e .
+
 ```
 
+The following are the steps involved to get inferences from Paddleseg for the semantic segmentation network Deeplab V3+
+
+'python -m pip install paddlepaddle-gpu==2.4.2 -i https://pypi.tuna.tsinghua.edu.cn/simple'
 
 Renumbering of class ids
 Eliminating the extra classes other than the ones considered
 Reorganization of the instance mask representation to follow the Cityscapes VPS convention.
 In this research work Cityscapes VPS is adopted as standard while the KITTI STEP and VPS masks form the Waymo dataset are converted to stadard format (Cityscaopes format). All the modified VPS masks of the KITTI STEP and Waymo dataset shall be found in the following link:T 
-
-The original datasets particularly the RGB input images shall be downloaded from the respective link which is repeated here for reference: 
 
 
 **MERGING APPROACHES**
