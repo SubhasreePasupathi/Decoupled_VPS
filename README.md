@@ -1,13 +1,29 @@
 
 # Decoupled Approaches for Road Semantics-Inclusive Video Panoptic Segmentation in Autonomous Driving
 
-## **Official Implementation for *Decoupled Approaches for Road Semantics-Inclusive Video Panoptic Segmentation in Autonomous Driving* submitted to the The Visual Computer Journal**
+## **Official Implementation for *Decoupled Approaches for Road Semantics-Inclusive Video Panoptic Segmentation in Autonomous Driving* submitted to the The Visual Computer Journal, Springer**
 ## [[Modified Dataset](https://drive.google.com/drive/folders/1T2hEF7VbFGRytLEMxsbDKYg-ehi8NmUg?usp=sharing)] [[Original Cityscapes VPS Dataset](https://www.dropbox.com/scl/fi/th8t12uvalox9fopzlab1/cityscapes-vps-dataset-1.0.zip?rlkey=rfd1prz6jsn4kxi1nc04gqqsr&e=1&dl=0)] [[Original KITTI STEP Dataset](https://www.cvlibs.net/datasets/kitti/eval_step.php)] [[Original Waymo PVPS Dataset](https://waymo.com/open/download)]
 
-The repo has the code and data of the novel Decoupled Video Panoptic Segmentation applied on SOTA VPS datasets such as Cityscapes VPS, KITTI STEP, and Waymo VPS datasets. The work is presented in the article titled
+The repo has the code and data of the novel Decoupled Video Panoptic Segmentation applied on VPS datasets such as Cityscapes VPS, KITTI STEP, and Waymo VPS datasets. The work is presented in the article titled *Decoupled Approaches for Road Semantics-Inclusive Video Panoptic Segmentation in Autonomous Driving* submitted to The Visual Computer Journal, Springer.
 
+### Preamble
+The Decoupled VPS presented in the article is applied to the three datasets in which Cityscapes VPS format is consiered as the reference format for annotations of track id and the class id and hence is not subjected to any modification. while the other two datasets are subjected to the following modifications for the ground truth to get a common basis for comparision.
 
-The Decoupled VPS is applied to the three datasets in which Cityscapes VPS is not subjected to any modification, while the other two datasets are subjected to the following modifications for the ground truth to get a common basis for comparision.
+### Disclaimer
+The contents of the repo are tested under Python 3.7, PyTorch 1.4, Cuda 10.2, and mmcv==0.2.14
+
+### Installation
+Most of the codes used in the repo are based on [mmdetection](https://github.com/open-mmlab/mmdetection) commit hash 4357697. The following modifications are made in the mmdetection module.
+The following commands can be used to install the dependencies:
+
+`conda create -n vps python=3.7 -y
+conda activate vps
+conda install pytorch=1.4 torchvision cudatoolkit=10.0 -c pytorch -y
+pip install -r requirements.txt
+pip install "git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI"
+pip install "git+https://github.com/cocodataset/panopticapi.git"
+pip install -v -e .` 
+
 
 Renumbering of class ids
 Eliminating the extra classes other than the ones considered
@@ -16,11 +32,6 @@ In this research work Cityscapes VPS is adopted as standard while the KITTI STEP
 
 The original datasets particularly the RGB input images shall be downloaded from the respective link which is repeated here for reference: 
 
-Cityscapes VPS Dataset: 
-
-: 
-
- (PVPS only required):
 
 **MERGING APPROACHES**
 
