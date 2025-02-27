@@ -16,13 +16,13 @@ The contents of the repo are tested under Python 3.7, PyTorch 1.4, Cuda 10.2, an
 Most of the codes used in the repo are based on [mmdetection](https://github.com/open-mmlab/mmdetection) commit hash 4357697. The following modifications are made in the mmdetection module.
 The following commands can be used to install the dependencies:
 
-`conda create -n vps python=3.7 -y
-conda activate vps
-conda install pytorch=1.4 torchvision cudatoolkit=10.0 -c pytorch -y
-pip install -r requirements.txt
-pip install "git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI"
-pip install "git+https://github.com/cocodataset/panopticapi.git"
-pip install -v -e .` 
+`conda create -n vps python=3.7 -y`
+`conda activate vps`
+`conda install pytorch=1.4 torchvision cudatoolkit=10.0 -c pytorch -y`
+`pip install -r requirements.txt`
+`pip install "git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI"`
+`pip install "git+https://github.com/cocodataset/panopticapi.git"`
+`pip install -v -e .` 
 
 
 Renumbering of class ids
