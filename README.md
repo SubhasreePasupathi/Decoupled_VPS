@@ -30,7 +30,7 @@ pip install -v -e .
 
 ```
 
-The following are the steps involved to get inferences from Paddleseg for the semantic segmentation network Deeplab V3+
+The following are the steps involved to get inferences from Paddleseg for the semantic segmentation network SSEG (a modified version of Deeplab V3+ as reported in the [paper](https://arxiv.org/pdf/1812.01593.pdf)
 
 ```
 python -m pip install paddlepaddle-gpu==2.4.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
@@ -44,20 +44,22 @@ pip install mmdet==2.10.0
 pip install motmetrics
 ```
 
-Clone the github repo for [PCAN](https://github.com/SysCV/pcan/tree/main)
-Run the following code to set the requirements for PCAN inferences
+Clone the github repo for [PCAN](https://github.com/SysCV/pcan/tree/main).
+
+Run the following line to set the requirements for PCAN inferences
 
 ```
 python setup.py develop
 ```
 
+For the object detection YOLOv5 is used followed by BoTSort for tracking which is implemented using the Ultralytics framework. The procedure mentioned in [link](https://github.com/ultralytics/yolov5) can be followed to setup.
 
 
-
-Renumbering of class ids
-Eliminating the extra classes other than the ones considered
-Reorganization of the instance mask representation to follow the Cityscapes VPS convention.
-In this research work Cityscapes VPS is adopted as standard while the KITTI STEP and VPS masks form the Waymo dataset are converted to stadard format (Cityscaopes format). All the modified VPS masks of the KITTI STEP and Waymo dataset shall be found in the following link:T 
+### Major Modifications
+The following modifications are made in the datasets to create a common basis (Cityscapes VPS convention)
+1. Renumbering of class ids
+2. Eliminating the extra classes other than the ones considered (listed in the journal article)
+3. Reorganization of the instance mask representation to follow the Cityscapes VPS convention.
 
 
 **MERGING APPROACHES**
