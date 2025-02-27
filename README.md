@@ -1,5 +1,8 @@
 
 # Decoupled Approaches for Road Semantics-Inclusive Video Panoptic Segmentation in Autonomous Driving
+[Dataset](https://drive.google.com/drive/folders/1T2hEF7VbFGRytLEMxsbDKYg-ehi8NmUg?usp=sharing)
+**Official Implementation for *Decoupled Approaches for Road Semantics-Inclusive Video Panoptic Segmentation in Autonomous Driving* submitted to the The Visual Computer Journal
+
 The repo has the code and data of the novel Decoupled Video Panoptic Segmentation applied on SOTA VPS datasets such as Cityscapes VPS, KITTI STEP, and Waymo VPS datasets. The work is presented in the article titled
 
 
@@ -8,7 +11,7 @@ The Decoupled VPS is applied to the three datasets in which Cityscapes VPS is no
 Renumbering of class ids
 Eliminating the extra classes other than the ones considered
 Reorganization of the instance mask representation to follow the Cityscapes VPS convention.
-In this research work Cityscapes VPS is adopted as standard while the KITTI STEP and VPS masks form the Waymo dataset are converted to stadard format (Cityscaopes format). All the modified VPS masks of the KITTI STEP and Waymo dataset shall be found in the following link:T https://drive.google.com/drive/folders/1T2hEF7VbFGRytLEMxsbDKYg-ehi8NmUg?usp=sharing
+In this research work Cityscapes VPS is adopted as standard while the KITTI STEP and VPS masks form the Waymo dataset are converted to stadard format (Cityscaopes format). All the modified VPS masks of the KITTI STEP and Waymo dataset shall be found in the following link:T 
 
 The original datasets particularly the RGB input images shall be downloaded from the respective link which is repeated here for reference: 
 
