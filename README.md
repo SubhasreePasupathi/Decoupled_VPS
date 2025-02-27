@@ -36,6 +36,24 @@ The following are the steps involved to get inferences from Paddleseg for the se
 python -m pip install paddlepaddle-gpu==2.4.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
+The following are the steps involved to get inferences from the official implementation for the MOTS network PCAN:
+
+```
+pip install mmcv-full==1.2.7
+pip install mmdet==2.10.0
+pip install motmetrics
+```
+
+Clone the github repo for [PCAN](https://github.com/SysCV/pcan/tree/main)
+Run the following code to set the requirements for PCAN inferences
+
+```
+python setup.py develop
+```
+
+
+
+
 Renumbering of class ids
 Eliminating the extra classes other than the ones considered
 Reorganization of the instance mask representation to follow the Cityscapes VPS convention.
