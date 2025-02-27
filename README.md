@@ -73,7 +73,7 @@ Use the code from the folder *formats_conversion_for_track_eval* to convert all 
 Use the codes in *modify_waymoids_to_cv_ids* to convert the instance ids of waymo masks to standard format used in the paper.
 
 
-**Merging Approaches (MS andM MIS)**
+**Merging Approaches (MS and MIS)**
 
 The codes required for the mask merging of instance masks and segmentation masks along with tracking data in both MS and MIS approaches are presented in *mask_merge* folder.
 
