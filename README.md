@@ -17,11 +17,17 @@ Most of the codes used in the repo are based on [mmdetection](https://github.com
 The following commands can be used to install the dependencies:
 
 `conda create -n vps python=3.7 -y`
+
 `conda activate vps`
+
 `conda install pytorch=1.4 torchvision cudatoolkit=10.0 -c pytorch -y`
+
 `pip install -r requirements.txt`
+
 `pip install "git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI"`
+
 `pip install "git+https://github.com/cocodataset/panopticapi.git"`
+
 `pip install -v -e .` 
 
 
