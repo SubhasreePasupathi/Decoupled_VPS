@@ -55,7 +55,7 @@ python setup.py develop
 For the object detection YOLOv5 is used followed by BoTSort for tracking which is implemented using the Ultralytics framework. The procedure mentioned in [link](https://github.com/ultralytics/yolov5) can be followed to setup.
 
 
-### Major Modifications
+### Modifications
 The following modifications are made in the datasets to create a common basis (Cityscapes VPS convention)
 1. Renumbering of class ids
 2. Eliminating the extra classes other than the ones considered (listed in the journal article)
