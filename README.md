@@ -10,16 +10,16 @@ The repo has the code and data of the novel Decoupled Video Panoptic Segmentatio
 The Decoupled VPS presented in the article is applied to the three datasets in which Cityscapes VPS format is consiered as the reference format for annotations of track id and the class id and hence is not subjected to any modification. while the other two datasets are subjected to the following modifications for the ground truth to get a common basis for comparision.
 
 ### Disclaimer
-The contents of the repo are tested under Python 3.7, PyTorch 1.4, Cuda 10.2, and mmcv==0.2.14
+The contents of the repo are tested under Python 3.7, PyTorch 1.12, Cuda 10.2, and mmcv==0.2.14
 
 ### Installation
 Most of the codes used in the repo are based on [mmdetection](https://github.com/open-mmlab/mmdetection) commit hash 4357697. The following modifications are made in the mmdetection module.
 The following commands can be used to install the dependencies:
 
 ```
-conda create -n vps python=3.7 -y
-conda activate vps
-conda install pytorch=1.4 torchvision cudatoolkit=10.0 -c pytorch -y
+conda create -n decoup_vps python=3.7 -y
+conda activate decoup_vps
+conda install pytorch=1.12 torchvision cudatoolkit=10.2 -c pytorch -y
 pip install -r requirements.txt
 pip install "git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI"
 pip install "git+https://github.com/cocodataset/panopticapi.git"
