@@ -54,19 +54,13 @@ python setup.py develop
 
 For the object detection YOLOv5 is used followed by BoTSort for tracking which is implemented using the Ultralytics framework. The procedure mentioned in [link](https://github.com/ultralytics/yolov5) can be followed to setup.
 
+**Format Conversions**
 
-### Modifications
 The following modifications are made in the datasets to create a common basis (Cityscapes VPS convention)
 1. Renumbering of class ids
 2. Eliminating the extra classes other than the ones considered (listed in the journal article)
 3. Reorganization of the instance mask representation to follow the Cityscapes VPS convention.
 
-
-**MERGING APPROACHES**
-
-The codes required for the mask merging of instance masks and segmentation masks along with tracking data in both MS and MIS approaches are presented in *mask_merge* folder.
-
-**FORMAT CONVERSIONS**
 
 The following  changes needs to be made in order to repeat the work presented in the article published.
 
@@ -77,6 +71,12 @@ Use the code from the folder *format_conversion_for_kittti_step_vpq* to convert 
 Use the code from the folder *formats_conversion_for_track_eval* to convert all the data to the coomon format for applying evaluation metrics related to tracking performance.
 
 Use the codes in *modify_waymoids_to_cv_ids* to convert the instance ids of waymo masks to standard format used in the paper.
+
+
+**Merging Approaches (MS andM MIS)**
+
+The codes required for the mask merging of instance masks and segmentation masks along with tracking data in both MS and MIS approaches are presented in *mask_merge* folder.
+
 
 **EVALUATION**
 
