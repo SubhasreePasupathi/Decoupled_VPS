@@ -32,7 +32,9 @@ pip install -v -e .
 
 The following are the steps involved to get inferences from Paddleseg for the semantic segmentation network Deeplab V3+
 
-'python -m pip install paddlepaddle-gpu==2.4.2 -i https://pypi.tuna.tsinghua.edu.cn/simple'
+```
+python -m pip install paddlepaddle-gpu==2.4.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
 
 Renumbering of class ids
 Eliminating the extra classes other than the ones considered
